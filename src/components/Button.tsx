@@ -5,9 +5,12 @@ const Button: Component<
     variant?: "primary" | "secondary";
   }
 > = (props) => {
-  const defaultProps = mergeProps(props, {
-    variant: "primary",
-  });
+  const defaultProps = mergeProps(
+    {
+      variant: "primary",
+    },
+    props,
+  );
 
   return (
     <button
@@ -16,7 +19,7 @@ const Button: Component<
       classList={{
         "bg-blue-500 hover:bg-blue-600 text-white":
           defaultProps.variant === "primary",
-        "bg-gray-500 hover:bg-gray-600 text-white":
+        "bg-zinc-500 hover:bg-zinc-600 text-white":
           defaultProps.variant === "secondary",
       }}
     >

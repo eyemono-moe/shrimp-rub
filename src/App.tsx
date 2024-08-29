@@ -6,7 +6,7 @@ import { MassageProvider } from "./context/Massage";
 const App: Component = () => {
   return (
     <MassageProvider>
-      <div class="bg-#e1e1e1 h-100vh flex flex-col">
+      <div class="bg-#e1e1e1 w-full min-h-100dvh grid grid-rows-[1fr_auto_auto] justify-center">
         <Massagers />
         <Controller />
         <div class="text-center">

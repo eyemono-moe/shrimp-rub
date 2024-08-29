@@ -29,7 +29,7 @@ const FileInput: Component<{
   };
 
   return (
-    <div class="relative w-full h-auto aspect-1">
+    <div class="relative w-full h-auto aspect-1 pointer-events-auto">
       <div class="absolute inset-0 flex flex-col items-center gap-2 pointer-events-none p-4">
         <div class="flex">
           <div class="i-material-symbols:add-photo-alternate-outline-rounded w-6 h-6" />
