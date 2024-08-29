@@ -23,17 +23,19 @@ const Image: Component<{
   });
 
   return (
-    <div class="w-fit h-fit" ref={setContainerRef}>
-      <Show
-        when={imgSrc()}
-        fallback={
+    <Show
+      when={imgSrc()}
+      fallback={
+        <div class="w-fit mx-auto">
           <FileInput
             onChange={(base64) => {
               setImgSrc(base64);
             }}
           />
-        }
-      >
+        </div>
+      }
+    >
+      <div class="w-fit h-fit pointer-events-auto" ref={setContainerRef}>
         <Show when={showReset()}>
           <button
             type="button"
@@ -45,8 +47,8 @@ const Image: Component<{
         </Show>
         {/* biome-ignore lint/a11y/useAltText: user input */}
         <img src={imgSrc()} />
-      </Show>
-    </div>
+      </div>
+    </Show>
   );
 };
 

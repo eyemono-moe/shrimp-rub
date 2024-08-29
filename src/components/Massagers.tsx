@@ -6,7 +6,7 @@ const Massagers: Component = () => {
   const [state] = useMassage();
 
   return (
-    <div class="w-full h-full flex justify-center items-center gap-4 px-4">
+    <div class="w-full h-full flex justify-center items-center gap-4 px-4 children-[*]-flex-basis-[max(200px,20vw)]">
       <For each={new Array(state.count)}>{() => <Massager />}</For>
     </div>
   );

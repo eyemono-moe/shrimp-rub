@@ -10,7 +10,7 @@ const Hand: Component = () => {
     <img
       src={HandSrc}
       alt="手"
-      class="absolute left-20% bottom--5% w-60% [--radius:20px] translate-(x-[calc(var(--radius)*sin(var(--angle)))] y-[calc(var(--radius)*cos(var(--angle)))])"
+      class="pointer-events-none absolute left-50% bottom--5% w-60% [--radius:8cqw] translate-(x-[calc(var(--radius)*sin(var(--angle))-50%)] y-[calc(var(--radius)*cos(var(--angle)))])"
       classList={{
         "animate-[0.53s_hand_linear_infinite]": state.massaging,
       }}
