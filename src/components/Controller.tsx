@@ -3,7 +3,7 @@ import { useMassage } from "../context/Massage";
 import Button from "./Button";
 
 const Controller: Component = () => {
-  const [state, { addMassager, removeMassager, toggleMassaging }] =
+  const [state, { addMassager, removeMassager, toggleMassaging, toggleBB }] =
     useMassage();
 
   return (
@@ -20,6 +20,9 @@ const Controller: Component = () => {
       <Button type="button" variant="secondary" onClick={addMassager}>
         <div class="i-material-symbols:person-add-outline-rounded w-6 h-6" />
         もっと揉む
+      </Button>
+      <Button type="button" variant="secondary" onClick={toggleBB}>
+        BB切り替え
       </Button>
     </div>
   );
