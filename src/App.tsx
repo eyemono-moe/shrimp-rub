@@ -1,10 +1,16 @@
 import type { Component } from "solid-js";
+import Controller from "./components/Controller";
+import Massagers from "./components/Massagers";
+import { MassageProvider } from "./context/Massage";
 
 const App: Component = () => {
   return (
-    <div>
-      <h2>App</h2>
-    </div>
+    <MassageProvider>
+      <div class="bg-#e1e1e1 h-100vh flex flex-col">
+        <Massagers />
+        <Controller />
+      </div>
+    </MassageProvider>
   );
 };
 

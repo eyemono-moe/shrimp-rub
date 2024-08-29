@@ -10,7 +10,9 @@ import {
 export default defineConfig({
   presets: [
     presetUno(),
-    presetIcons(),
+    presetIcons({
+      autoInstall: true,
+    }),
     presetTypography(),
     presetWebFonts({
       provider: "google",
