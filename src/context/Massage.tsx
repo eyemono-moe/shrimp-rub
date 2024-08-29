@@ -4,6 +4,7 @@ import { createStore } from "solid-js/store";
 const defaultState = {
   count: 1,
   massaging: false,
+  isBB: false,
 };
 
 const MassageContext = createContext<
@@ -13,6 +14,7 @@ const MassageContext = createContext<
       toggleMassaging: () => void;
       addMassager: () => void;
       removeMassager: () => void;
+      toggleBB: () => void;
     },
   ]
 >([
@@ -21,6 +23,7 @@ const MassageContext = createContext<
     toggleMassaging: () => {},
     addMassager: () => {},
     removeMassager: () => {},
+    toggleBB: () => {},
   },
 ]);
 
@@ -36,6 +39,9 @@ export const MassageProvider: ParentComponent = (props) => {
   const removeMassager = () => {
     setState("count", (c) => Math.max(1, c - 1));
   };
+  const toggleBB = () => {
+    setState("isBB", (bb) => !bb);
+  };
 
   return (
     <MassageContext.Provider
@@ -45,6 +51,7 @@ export const MassageProvider: ParentComponent = (props) => {
           toggleMassaging,
           addMassager,
           removeMassager,
+          toggleBB,
         },
       ]}
     >
