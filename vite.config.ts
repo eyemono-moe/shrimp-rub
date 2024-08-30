@@ -11,7 +11,7 @@ export default defineConfig({
       google: {
         families: ["Noto Sans JP"],
         // Array.from(new Set("使われている文字")).sort((a,b) => a.localeCompare(b)).join("")
-        text: "：01459BLmorRsUいえエすちっとなビまむもょりるを画元使切選像替択入用力揉",
+        text: "：01459BLmorRsUいえエちっとなビまむもょりを画元込切選像替択読入力揉",
       },
     }),
   ],
