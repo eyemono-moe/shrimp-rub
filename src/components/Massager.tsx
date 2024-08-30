@@ -1,9 +1,9 @@
 import type { Component } from "solid-js";
-import DefaultShrimp from "../assets/shrimp.png";
+import DefaultShrimp from "../assets/shrimp.webp";
+import { useMassage } from "../context/Massage";
 import Hand from "./Hand";
 import Image from "./Image";
 import "../assets/momi.css";
-import { useMassage } from "../context/Massage";
 
 const Massager: Component = () => {
   const [state] = useMassage();

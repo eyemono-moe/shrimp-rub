@@ -35,7 +35,7 @@ const Image: Component<{
         </div>
       }
     >
-      <div class="w-fit h-fit pointer-events-auto" ref={setContainerRef}>
+      <div class="w-full h-fit pointer-events-auto" ref={setContainerRef}>
         <Show when={showReset()}>
           <button
             type="button"
@@ -46,7 +46,7 @@ const Image: Component<{
           </button>
         </Show>
         {/* biome-ignore lint/a11y/useAltText: user input */}
-        <img src={imgSrc()} />
+        <img class="w-full" src={imgSrc()} />
       </div>
     </Show>
   );

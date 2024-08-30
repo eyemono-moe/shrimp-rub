@@ -1,5 +1,5 @@
 import type { Component } from "solid-js";
-import HandSrc from "../assets/hand.png";
+import HandSrc from "../assets/hand.webp";
 import { useMassage } from "../context/Massage";
 import "../assets/momi.css";
 
