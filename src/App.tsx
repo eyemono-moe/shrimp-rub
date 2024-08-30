@@ -8,7 +8,7 @@ const App: Component = () => {
 
   return (
     <div
-      class="w-full min-h-100dvh grid grid-rows-[1fr_auto_auto]"
+      class="w-full min-h-100dvh grid grid-rows-[1fr_auto_auto] font-[Noto_Sans_JP] px-4 pb-8"
       classList={{
         "bg-#00f": state.isBB,
         "bg-#e1e1e1": !state.isBB,
