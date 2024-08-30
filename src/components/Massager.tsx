@@ -1,9 +1,8 @@
 import type { Component } from "solid-js";
-import DefaultShrimp from "../assets/shrimp.png";
+import { useMassage } from "../context/Massage";
 import Hand from "./Hand";
 import Image from "./Image";
 import "../assets/momi.css";
-import { useMassage } from "../context/Massage";
 
 const Massager: Component = () => {
   const [state] = useMassage();
@@ -20,7 +19,7 @@ const Massager: Component = () => {
             "animate-[0.53s_hand_linear_infinite]": state.massaging,
           }}
         >
-          <Image defaultSrc={DefaultShrimp} />
+          <Image defaultSrc="/shrimp.webp" />
         </div>
       </div>
       <Hand />
