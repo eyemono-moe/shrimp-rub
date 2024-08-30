@@ -1,5 +1,4 @@
 import type { Component } from "solid-js";
-import HandSrc from "../assets/hand.webp";
 import { useMassage } from "../context/Massage";
 import "../assets/momi.css";
 
@@ -8,7 +7,7 @@ const Hand: Component = () => {
 
   return (
     <img
-      src={HandSrc}
+      src="/hand.webp"
       alt="手"
       class="pointer-events-none absolute left-50% bottom--5% w-60% [--radius:8cqw] translate-(x-[calc(var(--radius)*sin(var(--angle))-50%)] y-[calc(var(--radius)*cos(var(--angle)))])"
       classList={{
