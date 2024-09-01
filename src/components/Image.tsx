@@ -40,7 +40,7 @@ const Image: Component<{
           <button
             type="button"
             onClick={resetImage}
-            class="absolute top-0 right-0 appearance-none p-1 bg-red rounded-full"
+            class="absolute top-0 right-0 appearance-none p-1 bg-red rounded-full touch-manipulation"
           >
             <div class="i-material-symbols:delete-outline-rounded w-6 h-6 c-white" />
           </button>
