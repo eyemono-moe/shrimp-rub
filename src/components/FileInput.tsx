@@ -53,7 +53,7 @@ const FileInput: Component<{
           <button
             type="button"
             onClick={handleUrlSubmit}
-            class="pointer-events-auto rounded px-2 py-1 font-bold text-nowrap bg-blue-500 hover:bg-blue-600 text-white touch-manipulation"
+            class="pointer-events-auto rounded px-2 py-1 font-bold text-nowrap bg-blue-600 hover:bg-blue-700 text-white touch-manipulation"
           >
             読込
           </button>

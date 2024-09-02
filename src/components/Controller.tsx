@@ -7,7 +7,7 @@ const Controller: Component = () => {
     useMassage();
 
   return (
-    <div class="flex flex-wrap gap-2 justify-center w-full py-4">
+    <div class="flex flex-wrap gap-2 justify-center w-full">
       <Button type="button" onClick={toggleMassaging}>
         <Show when={state.massaging} fallback="揉む">
           揉まない
