@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@solid-primitives/pointer": "^0.3.0",
-    "@unocss/reset": "^0.63.6",
+    "@unocss/reset": "^66.0.0",
     "solid-js": "^1.9.4"
   },
   "devDependencies": {
