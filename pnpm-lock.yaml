@@ -12,8 +12,8 @@ importers:
         specifier: ^0.3.0
         version: 0.3.0(solid-js@1.9.4)
       '@unocss/reset':
-        specifier: ^0.63.6
-        version: 0.63.6
+        specifier: ^66.0.0
+        version: 66.0.0
       solid-js:
         specifier: ^1.9.4
         version: 1.9.4
@@ -710,6 +710,9 @@ packages:
 
   '@unocss/reset@0.63.6':
     resolution: {integrity: sha512-gq73RSZj54MOloqrivkoMPXCqNG2WpIyBT1AYlF76uKxEEbUD41E8uBUhLSKs7gFgF01yQJLRaIuyN1yw09pbQ==}
+
+  '@unocss/reset@66.0.0':
+    resolution: {integrity: sha512-YLFz/5yT7mFJC8JSmIUA5+bS3CBCJbtztOw+8rWzjQr/BEVSGuihWUUpI2Df6VVxXIXxKanZR6mIl59yvf+GEA==}
 
   '@unocss/rule-utils@0.63.6':
     resolution: {integrity: sha512-moeDEq5d9mB8gSYeoqHMkXWWekaFFdhg7QCuwwCbxCc+NPMOgGkmfAoafz+y2tdvK7pEuT191RWOiHQ0MkA5oQ==}
@@ -2074,6 +2077,8 @@ snapshots:
       '@unocss/rule-utils': 0.63.6
 
   '@unocss/reset@0.63.6': {}
+
+  '@unocss/reset@66.0.0': {}
 
   '@unocss/rule-utils@0.63.6':
     dependencies:
